@@ -1,0 +1,29 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbutton {
+  width: 220px;
+  margin-right: -155px;
+}
+
+.drop-items {
+  display: flex;
+  flex-direction: column;
+  position: float;
+ 
+  
+}
+
