@@ -20,10 +20,14 @@ nav {
 }
 
 .drop-items {
-  display: flex;
+  display: none;
   flex-direction: column;
   position: float;
  
   
+}
+
+.dropdown-container:hover .drop-items {
+  display: flex;
 }
 
