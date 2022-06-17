@@ -1,13 +1,19 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <nav>
   <%= link_to root_path do %>
-    <<img src="" alt="Badger Creek Wireless Logo">>
+    <img src="" alt="Badger Creek Wireless Logo">
   <% end %>
-  <div class="links">
+  <div class="links" id="linksMain">
     <%= link_to "Home", root_path, class: "navbutton"%>
     <div class="dropdown-container">
-      <%= link_to "About", about_path, class: "dropdown navbutton"%>
+      <div class="drop-link">
+        <%= link_to "About", about_path, class: "dropdown navbutton"%>
+        <a href="javascript:void(0);" class="icon" onclick="Opensecondary()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
       <div class="drop-items">
-        <div class="drop-flex">
+        <div class="drop-flex" id="linksAbout">
           <a href="" class="navbutton drop">A bit about us</a>
           <a href="" class="navbutton drop">Social media</a>
           <a href="" class="navbutton drop">Legal information</a>
@@ -15,8 +21,12 @@
       </div>
     </div>
     <div class="dropdown-container">
-      <a href="" class="dropdown navbutton">Pricing</a>
-      
+      <div class="drop-link" id="linksPricing">
+        <a href="" class="dropdown navbutton">Pricing</a>
+        <a href="javascript:void(0);" class="icon" onclick="Opensecondary()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
       <div class="drop-items">
         <div class="drop-flex">
           <a href="" class="navbutton drop">Package information</a>
@@ -29,4 +39,7 @@
     <a href="" class="navbutton">Billing</a>
     <a href="" class="navbutton">Support</a>
   </div>
+  <a href="javascript:void(0);" class="icon" onclick="openMain()">
+    <i class="fa fa-bars"></i>
+  </a>
 </nav>

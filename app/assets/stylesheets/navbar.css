@@ -1,102 +1,125 @@
-:root {
-  --navheading: calc((100px - 24px) / 2);
+@media screen and (min-width: 601px) {
+  :root {
+    --navheading: calc((100px - 24px) / 2);
+    /*spacing is total navbar height - the text height / 2 */
+  }
   
   
-  /*spacing is total navbar height - the text height / 2 */
-}
-
-
-
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  align-items: center;
-
-  /* when changing nav height, navheading calc and drop-flex top margin must be changed to the same value */
-  height: 100px;
-  /* box-shadow: 2px 0px 11px 0px rgba(166,166,166,0.69); */
-
-}
-
-.links {
-  display: flex;
-  justify-content: space-evenly;
   
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+  
+    /* when changing nav height, navheading calc and drop-flex top margin must be changed to the same value */
+    height: 100px;
+    /* box-shadow: 2px 0px 11px 0px rgba(166,166,166,0.69); */
+  
+  }
+  
+  .links {
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+  
+  .dropdown-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0px;
+  }
+  
+  .navbutton {
+    z-index: 2;
+    padding: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: var(--navheading);
+    padding-bottom: var(--navheading);
+    font-size: 24px;
+    color: rgba(6, 9, 179, 0.842);
+  
+  }
+  
+  .drop-link {
+    display: flex;
+  }
+  
+  .drop-items {
+    display: none;
+    position: absolute;
+  
+    white-space: nowrap;
+  }
+  
+  .drop-flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 103px;
+    background-color: white;
+    color: rgba(6, 9, 179, 0.954);
+    z-index: 1;
+    border-radius: 1px;
+    /* box-shadow: 2px 2px 10px 1px rgba(166,166,166,0.69) */
+  }
+  
+  .dropdown-container:hover .drop-items {
+    display: block;
+  
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  .drop {
+    padding: 4px;
+    font-size: 18px;
+    background-color: lightgray;
+    color: rgba(6, 9, 179, 0.918);
+  }
+  
+  .dropdown-container:hover > .navbutton{
+    color: white;
+    background-color: rgba(6, 9, 179, 0.897);
+  }
+  
+  .navbutton:hover {
+    color: white;
+    background-color: rgba(6, 9, 179, 0.913);
+  }
+
+  .icon {
+    display: none;
+  }
 }
 
-.dropdown-container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  margin: 0px;
-}
-
-.navbutton {
-  z-index: 2;
-  padding: auto;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: var(--navheading);
-  padding-bottom: var(--navheading);
-  font-size: 24px;
-  color: rgba(6, 9, 179, 0.842);
-
-}
 
 
-.drop-items {
-  display: none;
-  position: absolute;
 
-  white-space: nowrap;
-}
-
-.drop-flex {
-  display: flex;
-  flex-direction: column;
-  margin-top: 103px;
-  background-color: white;
-  color: rgba(6, 9, 179, 0.954);
-  z-index: 1;
-  border-radius: 1px;
-  /* box-shadow: 2px 2px 10px 1px rgba(166,166,166,0.69) */
-}
-
-.dropdown-container:hover .drop-items {
-  display: block;
-
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-
-.drop {
-  padding: 4px;
-  font-size: 18px;
-  background-color: lightgray;
-  color: rgba(6, 9, 179, 0.918);
-}
-
-.dropdown-container:hover > .navbutton{
-  color: white;
-  background-color: rgba(6, 9, 179, 0.897);
-}
-
-.navbutton:hover {
-  color: white;
-  background-color: rgba(6, 9, 179, 0.913);
-}
 
 @media screen and (min-width: 1800px) {
   nav {
     padding-right: 0;
 
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .drop-flex {
+    display: flex;
+    flex-direction: column;
   }
 }
