@@ -1,9 +1,11 @@
 <nav>
-  <img src="" alt="Badger Creek Wireless Logo">
+  <%= link_to root_path do %>
+    <<img src="" alt="Badger Creek Wireless Logo">>
+  <% end %>
   <div class="links">
-    <a href="" class="navbutton">Home</a>
+    <%= link_to "Home", root_path, class: "navbutton"%>
     <div class="dropdown-container">
-      <a href="" class="dropdown navbutton pricing">About</a>
+      <%= link_to "About", about_path, class: "dropdown navbutton"%>
       <div class="drop-items">
         <div class="drop-flex">
           <a href="" class="navbutton drop">A bit about us</a>
@@ -12,8 +14,9 @@
         </div>
       </div>
     </div>
-    <div class="dropdown-container neg-margin">
-      <a href="" class="dropdown navbutton pricing">Pricing</a>
+    <div class="dropdown-container">
+      <a href="" class="dropdown navbutton">Pricing</a>
+      
       <div class="drop-items">
         <div class="drop-flex">
           <a href="" class="navbutton drop">Package information</a>
@@ -22,7 +25,7 @@
         </div>
       </div>
     </div> 
-    <a href="" class="navbutton neg-margin">Coverage</a>
+    <a href="" class="navbutton">Coverage</a>
     <a href="" class="navbutton">Billing</a>
     <a href="" class="navbutton">Support</a>
   </div>
