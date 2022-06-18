@@ -129,6 +129,7 @@
   .active {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
   }
 
 
@@ -163,12 +164,44 @@
   .navbutton, .drop-link {
     background-color: #e7ebf7;
   }
+  
+  .drop-flex > .navbutton {
+    background-color: #e7ebf7;
+  }
 
+  .activeitem, .activeitem > .navbutton{
+    background-color: #2059a8;
+    color: white;
+  }
  
+
+  .navbutton {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .display-top {
+    height: 40px;
+  }
+
+  .navbutton {
+    height: 30px;
+  }
+ 
+  .hamburgerAbout, .hamburgerPrices {
+    height: 40px;
+  }
+
 
 }
 
   a {
     text-decoration: none;
     color: #2059a8;
+  }
+
+  .navbutton {
+    font-family: "calibrib";
+    font-size: 22px;
+    font-weight: bold;
   }

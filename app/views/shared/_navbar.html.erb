@@ -8,28 +8,28 @@
   <div class="links" id="linksMain">
     <%= link_to "Home", root_path, class: "navbutton"%>
     <div class="dropdown-container">
-      <div class="drop-link">
+      <div class="drop-link about">
         <%= link_to "About", about_path, class: "dropdown navbutton"%>
         <%= image_tag("menu.svg", :alt => "mobile nav opener", class: "hamburgerAbout hamburger") %>
       </div>
       <div class="drop-items aboutitems">
         <div class="drop-flex" id="linksAbout">
-          <a href="" class="navbutton drop">A bit about us</a>
-          <a href="" class="navbutton drop">Social media</a>
-          <a href="" class="navbutton drop">Legal information</a>
+          <a href="" class="navbutton drop">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A bit about us</a>
+          <a href="" class="navbutton drop">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Social media</a>
+          <a href="" class="navbutton drop">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Legal information</a>
         </div>
       </div>
     </div>
     <div class="dropdown-container">
-      <div class="drop-link" id="linksPricing">
-        <a href="" class="dropdown navbutton">Pricing</a>
+      <div class="drop-link  prices" id="linksPricing">
+        <%= link_to "Pricing", about_path, class: "dropdown navbutton"%>
         <%= image_tag("menu.svg", :alt => "mobile nav opener", class: "hamburgerPrices hamburger") %>
       </div>
       <div class="drop-items pricingitems">
         <div class="drop-flex">
-          <a href="" class="navbutton drop">Package information</a>
-          <a href="" class="navbutton drop">Business Plans</a>
-          <a href="" class="navbutton drop">Affordable Connectivity Program</a>
+          <a href="" class="navbutton drop">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Package information</a>
+          <a href="" class="navbutton drop">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Business Plans</a>
+          <a href="" class="navbutton drop">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Affordable Connectivity Program</a>
         </div>
       </div>
     </div> 
@@ -41,8 +41,16 @@
     var navContent = document.querySelector('.links');
     document.querySelector(".hamburgerMain").addEventListener('click', function(){navContent.classList.toggle('active')})
     var aboutContent = document.querySelector('.aboutitems');
-    document.querySelector(".hamburgerAbout").addEventListener('click', function(){aboutContent.classList.toggle('active')})
+    var aboutButton = document.querySelector('.about')
+    document.querySelector(".hamburgerAbout").addEventListener('click', function(){
+      aboutContent.classList.toggle('active');
+      aboutButton.classList.toggle('activeitem');
+      })
     var pricesContent = document.querySelector('.pricingitems');
-    document.querySelector(".hamburgerPrices").addEventListener('click', function(){pricesContent.classList.toggle('active')})
+    var pricesButton = document.querySelector('.prices')
+    document.querySelector(".hamburgerPrices").addEventListener('click', function(){
+      pricesContent.classList.toggle('active');
+      pricesButton.classList.toggle('activeitem'); 
+      })
   </script>
 </nav>

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "calibri";
+  src: font-url("calibri.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "calibrib";
+  src: font-url("calibrib.ttf") format("truetype");
+}
