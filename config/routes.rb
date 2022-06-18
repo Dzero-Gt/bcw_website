@@ -7,6 +7,38 @@ Rails.application.routes.draw do
   #set homepage to root
   root to: "home#index"
 
+  #pricing page
+  get "pricing", to: "pricing#index"
+
+  #Coverage page
+  get "coverage", to: "coverage#index"
+
+  #billing page (will later redirect to external site)
+  get "billing", to: "billing#index"
+
+  #support page
+  get "support", to: "support#index"
+
+  #main about page
+  get "aboutmain", to: "aboutmain#index"
+
+  #social media page
+  get "social", to: "social#index"
+
+  #legal information page
+  get "legal", to: "legal#index"
+
+  #packages page
+  get "packages", to: "packages#index"
+
+  #business info page
+  get "business", to: "business#index"
+
+  #acp info page
+
+  get "acp", to: "acp#index"
+
+
   # Defines the root path route ("/")
   # root "articles#index"
 end

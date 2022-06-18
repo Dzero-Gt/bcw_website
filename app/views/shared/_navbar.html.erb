@@ -14,28 +14,28 @@
       </div>
       <div class="drop-items aboutitems">
         <div class="drop-flex" id="linksAbout">
-          <a href="" class="navbutton drop">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A bit about us</a>
-          <a href="" class="navbutton drop">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Social media</a>
-          <a href="" class="navbutton drop">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Legal information</a>
+          <%= link_to "A bit about us", aboutmain_path, class: "navbutton drop"%>
+          <%= link_to "Social Media", social_path, class: "navbutton drop"%>
+          <%= link_to "Legal Information", legal_path, class: "navbutton drop"%>
         </div>
       </div>
     </div>
     <div class="dropdown-container">
       <div class="drop-link  prices" id="linksPricing">
-        <%= link_to "Pricing", about_path, class: "dropdown navbutton"%>
+        <%= link_to "Pricing", pricing_path, class: "dropdown navbutton"%>
         <%= image_tag("menu.svg", :alt => "mobile nav opener", class: "hamburgerPrices hamburger") %>
       </div>
       <div class="drop-items pricingitems">
         <div class="drop-flex">
-          <a href="" class="navbutton drop">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Package information</a>
-          <a href="" class="navbutton drop">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Business Plans</a>
-          <a href="" class="navbutton drop">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Affordable Connectivity Program</a>
+          <%= link_to "Package Information", packages_path, class: "navbutton drop"%>
+          <%= link_to "Business Plans", business_path, class: "navbutton drop"%>
+          <%= link_to "Affordable Connectivity Program", acp_path, class: "navbutton drop"%>
         </div>
       </div>
     </div> 
-    <a href="" class="navbutton">Coverage</a>
-    <a href="" class="navbutton">Billing</a>
-    <a href="" class="navbutton">Support</a>
+    <%= link_to "Coverage", coverage_path, class: "navbutton"%>
+    <%= link_to "Billing", billing_path, class: "navbutton"%>
+    <%= link_to "Support", support_path, class: "navbutton"%>
   </div>
   <script>
     var navContent = document.querySelector('.links');

@@ -122,6 +122,10 @@
     display: none;
   }
 
+  .drop {
+    text-indent: 2rem;
+  }
+
   .drop-items {
     display: none;
   }
