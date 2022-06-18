@@ -45,12 +45,12 @@
   .navbutton {
     z-index: 2;
     padding: auto;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: var(--navheading);
     padding-bottom: var(--navheading);
     font-size: 24px;
-    color: rgba(6, 9, 179, 0.842);
+    color: #2059a8;
   
   }
   
@@ -68,9 +68,9 @@
   .drop-flex {
     display: flex;
     flex-direction: column;
-    margin-top: 103px;
+    margin-top: 102px;
     background-color: white;
-    color: rgba(6, 9, 179, 0.954);
+    color: #2059a8;
     z-index: 1;
     border-radius: 1px;
     /* box-shadow: 2px 2px 10px 1px rgba(166,166,166,0.69) */
@@ -87,18 +87,18 @@
   .drop {
     padding: 4px;
     font-size: 18px;
-    background-color: lightgray;
-    color: rgba(6, 9, 179, 0.918);
+    background-color: #e7ebf7;
+    color: #2059a8;
   }
   
   .dropdown-container:hover > .navbutton{
     color: white;
-    background-color: rgba(6, 9, 179, 0.897);
+    background-color: #2059a8;
   }
   
   .navbutton:hover {
     color: white;
-    background-color: rgba(6, 9, 179, 0.913);
+    background-color: #2059a8;
   }
 
   .icon {
@@ -113,8 +113,8 @@
 @media screen and (min-width: 1800px) {
   nav {
     padding-right: 0;
-
   }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -146,7 +146,7 @@
   .display-top {
     display: flex;
     justify-content: space-between;
-    background-color: blue;
+    background-color: #2059a8;
   }
 
   .hamburger {
@@ -161,13 +161,14 @@
   }
 
   .navbutton, .drop-link {
-    background-color: lightblue;
+    background-color: #e7ebf7;
   }
 
  
 
-
+}
 
   a {
     text-decoration: none;
+    color: #2059a8;
   }
