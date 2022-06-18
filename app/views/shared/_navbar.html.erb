@@ -25,7 +25,7 @@
         <a href="" class="dropdown navbutton">Pricing</a>
         <%= image_tag("menu.svg", :alt => "mobile nav opener", class: "hamburgerPrices hamburger") %>
       </div>
-      <div class="drop-items pricing-items">
+      <div class="drop-items pricingitems">
         <div class="drop-flex">
           <a href="" class="navbutton drop">Package information</a>
           <a href="" class="navbutton drop">Business Plans</a>
@@ -37,4 +37,12 @@
     <a href="" class="navbutton">Billing</a>
     <a href="" class="navbutton">Support</a>
   </div>
+  <script>
+    var navContent = document.querySelector('.links');
+    document.querySelector(".hamburgerMain").addEventListener('click', function(){navContent.classList.toggle('active')})
+    var aboutContent = document.querySelector('.aboutitems');
+    document.querySelector(".hamburgerAbout").addEventListener('click', function(){aboutContent.classList.toggle('active')})
+    var pricesContent = document.querySelector('.pricingitems');
+    document.querySelector(".hamburgerPrices").addEventListener('click', function(){pricesContent.classList.toggle('active')})
+  </script>
 </nav>
