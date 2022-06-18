@@ -3,6 +3,10 @@
     --navheading: calc((100px - 24px) / 2);
     /*spacing is total navbar height - the text height / 2 */
   }
+
+  .hamburger {
+    display: none;
+  }
   
   
   
@@ -19,6 +23,10 @@
     height: 100px;
     /* box-shadow: 2px 0px 11px 0px rgba(166,166,166,0.69); */
   
+  }
+
+  a {
+    color: white;
   }
   
   .links {
@@ -73,10 +81,7 @@
   
   }
   
-  a {
-    text-decoration: none;
-    color: white;
-  }
+
   
   
   .drop {
@@ -114,12 +119,55 @@
 
 @media screen and (max-width: 600px) {
   .links {
+    display: none;
+  }
+
+  .drop-items {
+    display: none;
+  }
+
+  .active {
     display: flex;
     flex-direction: column;
   }
+
 
   .drop-flex {
     display: flex;
     flex-direction: column;
   }
+
+
+  .dropdown-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .display-top {
+    display: flex;
+    justify-content: space-between;
+    background-color: blue;
+  }
+
+  .hamburger {
+    color: white;
+  }
+
+  .drop-link{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-content: center;
+  }
+
+  .navbutton, .drop-link {
+    background-color: lightblue;
+  }
+
+
+
 }
+
+  a {
+    text-decoration: none;
+  }
