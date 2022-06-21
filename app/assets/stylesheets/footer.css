@@ -72,4 +72,8 @@ footer {
     display: block;
   }
 
+  footer {
+    grid-template-columns: 1fr;
+  }
+
 }

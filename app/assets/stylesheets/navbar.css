@@ -165,6 +165,10 @@
     align-content: center;
   }
 
+  .activeitem > .hamburger {
+    content: url("menu-white.svg");
+  }
+
   .navbutton, .drop-link {
     background-color: #e7ebf7;
   }
