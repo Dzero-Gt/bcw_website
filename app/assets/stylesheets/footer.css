@@ -32,6 +32,7 @@ footer {
   padding-bottom: 1rem;
   padding-left: 25px;
   font-family: "calibrib";
+  margin-top: -1px;
 }
 
 .footer-nav, .footer-subnav {
@@ -56,7 +57,9 @@ footer {
 }
 
 
-@media screen and (max-width: 600px) {
+
+
+@media screen and (max-width: 850px) {
   .footer-nav, .footer-subnav, .copyright {
     color: white;
   }
@@ -76,4 +79,13 @@ footer {
     grid-template-columns: 1fr;
   }
 
+
 }
+
+@media screen and (max-width: 850px) {
+  footer{
+    padding-left: 2.5rem;
+  }
+ 
+}
+  

@@ -1,4 +1,4 @@
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 851px) {
   :root {
     --navheading: calc((100px - 24px) / 2);
     /*spacing is total navbar height - the text height / 2 */
@@ -117,7 +117,7 @@
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
   .links {
     display: none;
   }
