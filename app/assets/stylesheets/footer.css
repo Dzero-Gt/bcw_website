@@ -35,7 +35,7 @@ footer {
 }
 
 .footer_nav, .footer_subnav {
-  font-family: "calibri" ;
+  font-family: "calibri";
 
 }
 
@@ -51,6 +51,10 @@ footer {
   width: 19px;
 }
 
+.mobile {
+  display: none;
+}
+
 
 @media screen and (max-width: 600px) {
   .footer_nav, .footer_subnav, .copyright {
@@ -59,6 +63,13 @@ footer {
 
   footer, .copyright{
     background-color: #2059a8;
+  }
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
   }
 
 }

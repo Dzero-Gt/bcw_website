@@ -18,11 +18,13 @@
     <div class="subnav footer_box">
       <%= link_to "Social Media", social_path, class: "footer_nav"%>
       <a href="https://www.facebook.com/bargercreek/" class="footer_subnav social_center">
-        <%= image_tag("facebook-blue.svg", :alt => "", class: "social_icons") %>
+        <%= image_tag("facebook-blue.svg", :alt => "", class: "social_icons desktop") %>
+        <%= image_tag("facebook-white.svg", :alt => "", class: "social_icons mobile") %>
         <p class="social_text">Facebook</p>
       </a>
       <a href="https://www.instagram.com/barger_creek/?hl=en" class="footer_subnav social_center">
-       <%= image_tag("instagram-blue.svg", :alt => "", class: "social_icons") %> 
+       <%= image_tag("instagram-blue.svg", :alt => "", class: "social_icons desktop") %> 
+        <%= image_tag("instagram-white.svg", :alt => "", class: "social_icons mobile") %> 
        <p class="social-text">Instagram</p>
       </a>
     </div>

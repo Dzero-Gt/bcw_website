@@ -1,9 +1,9 @@
 @font-face {
-  font-family: "calibri";
+  font-family: "calibri", Arial, Calibri, Helcetica, "Open Sans", sans-serif;
   src: font-url("calibri.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: "calibrib";
+  font-family: "calibrib", Arial, Calibri, Helcetica, "Open Sans", sans-serif;
   src: font-url("calibrib.ttf") format("truetype");
 }
