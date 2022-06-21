@@ -2,8 +2,8 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
-  justify-self: flex-end;
   padding-left: 25px;
+  justify-self: flex-end;
   background-color: white;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -13,6 +13,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 220px;
+  gap: 3px;
 }
 
 .footer_nav {
@@ -38,6 +39,17 @@ footer {
 
 }
 
+.social_center {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 19px;
+}
+
+.social_icons{
+  height: 19px;
+  width: 19px;
+}
 
 
 @media screen and (max-width: 600px) {

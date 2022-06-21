@@ -17,8 +17,14 @@
     <%= link_to "Support", support_path, class: "footer_nav footer_box"%>
     <div class="subnav footer_box">
       <%= link_to "Social Media", social_path, class: "footer_nav"%>
-      <a href="https://www.facebook.com/bargercreek/" class="footer_subnav">Facebook</a>
-      <a href="https://www.instagram.com/barger_creek/?hl=en" class="footer_subnav">Instagram</a>
+      <a href="https://www.facebook.com/bargercreek/" class="footer_subnav social_center">
+        <%= image_tag("facebook-blue.svg", :alt => "", class: "social_icons") %>
+        <p class="social_text">Facebook</p>
+      </a>
+      <a href="https://www.instagram.com/barger_creek/?hl=en" class="footer_subnav social_center">
+       <%= image_tag("instagram-blue.svg", :alt => "", class: "social_icons") %> 
+       <p class="social-text">Instagram</p>
+      </a>
     </div>
 </footer>
 <p class="copyright">Copyright 2022 Barger Creek Wireless</p>
