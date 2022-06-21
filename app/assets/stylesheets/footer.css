@@ -9,19 +9,19 @@ footer {
   padding-bottom: 2rem;
 }
 
-.footer_box {
+.footer-box {
   display: flex;
   flex-direction: column;
   width: 220px;
   gap: 3px;
 }
 
-.footer_nav {
+.footer-nav {
   font-size: 18px;
   font-weight: bold;
 }
 
-.footer_subnav {
+.footer-subnav {
   font-size: 16px;
 }
 
@@ -34,19 +34,19 @@ footer {
   font-family: "calibrib";
 }
 
-.footer_nav, .footer_subnav {
+.footer-nav, .footer-subnav {
   font-family: "calibri";
 
 }
 
-.social_center {
+.social-center {
   display: flex;
   align-items: center;
   gap: 5px;
   height: 19px;
 }
 
-.social_icons{
+.social-icons{
   height: 19px;
   width: 19px;
 }
@@ -57,7 +57,7 @@ footer {
 
 
 @media screen and (max-width: 600px) {
-  .footer_nav, .footer_subnav, .copyright {
+  .footer-nav, .footer-subnav, .copyright {
     color: white;
   }
 

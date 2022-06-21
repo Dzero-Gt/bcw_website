@@ -1,0 +1,26 @@
+.home-body {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 25px;
+  padding: 1rem;
+}
+
+.temp {
+  grid-area: 1 / 1 / 2 / 3;
+  background-color: aqua;
+  height: 320px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .home-body {
+    grid-template-columns: 1fr;
+    gap: 0;
+    align-self: center;
+  }
+
+}
