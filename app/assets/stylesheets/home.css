@@ -10,6 +10,18 @@ p {
   padding: 1rem;
 }
 
+.alert-banner {
+  background-color: red;
+  color: white;
+  font-family: 'calibri';
+  font-weight: bold;
+  text-align: center;
+}
+
+.alert {
+  margin: 0;
+}
+
 .temp {
   grid-area: 1 / 2 / 2 / 3;
   background-color: aqua;
