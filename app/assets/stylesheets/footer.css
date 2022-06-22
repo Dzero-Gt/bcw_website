@@ -2,7 +2,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
-  padding-left: 25px;
+  padding-left: 26px;
   justify-self: flex-end;
   background-color: white;
   padding-top: 2rem;
