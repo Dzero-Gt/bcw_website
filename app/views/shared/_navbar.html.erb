@@ -9,12 +9,12 @@
     <%= link_to "Home", root_path, class: "navbutton"%>
     <div class="dropdown-container">
       <div class="drop-link about">
-        <%= link_to "About", about_path, class: "dropdown navbutton"%>
+        <%= link_to "About", aboutmain_path, class: "dropdown navbutton"%>
         <%= image_tag("menu-blue.svg", :alt => "mobile nav opener", class: "hamburgerAbout hamburger") %>
       </div>
       <div class="drop-items aboutitems">
         <div class="drop-flex" id="linksAbout">
-          <%= link_to "A bit about us", aboutmain_path, class: "navbutton drop"%>
+          <%= link_to "A bit about us", about_path, class: "navbutton drop"%>
           <%= link_to "Social Media", social_path, class: "navbutton drop"%>
           <%= link_to "Legal Information", legal_path, class: "navbutton drop"%>
         </div>
