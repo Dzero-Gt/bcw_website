@@ -4,12 +4,16 @@
     /*spacing is total navbar height - the text height / 2 */
   }
 
+  .logo {
+    height: 100px;
+  }
+
   .hamburger {
     display: none;
   }
   
   
-  
+
   nav {
     display: flex;
     flex-direction: row;
@@ -128,6 +132,14 @@
 
   .drop-items {
     display: none;
+  }
+
+  .logo {
+    height: 35px;
+    width: auto;
+    border-radius: 5px;
+    padding-top: 2.5px;
+    padding-left: 1px;
   }
 
   .active {
