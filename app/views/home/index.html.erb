@@ -1,6 +1,6 @@
 <% alert = contentful.entry('4wnozWUpEuT62TbQ6YMAsT')%>
 <div class="alert-banner">
-  <h1 class="alert"><%= alert %></h1>
+  <h1 class="alert"><%= alert.fields[:alert_content] %></h1>
 </div>
 <div class="home-body">
   <h1 class="temp">Welcome to BCW</h1>
