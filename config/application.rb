@@ -11,6 +11,12 @@ module BcwWebsite
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
+    require 'contentful'
+
+client = Contentful::Client.new(
+  space: 'a85lv0q5pkmu',  # This is the space ID. A space is like a project folder in Contentful terms
+  access_token: '85QLSeAynKRB0vvA7zOK-DthZkQIvj75Os4C6ClEd4g'  # This is the access token for this space. Normally you get both ID and the token in the Contentful web app
+)
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
