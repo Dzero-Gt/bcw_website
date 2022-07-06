@@ -62,41 +62,50 @@
       <h3 class="choice-subheader">Here are some things you can concider</h3>
       <% choice = contentful.entry('5J9gaZ2v8hAHrgd9S8Mf8X')%>
       <p class="choice-info"><%= choice.fields[:content]%></p>
+      <div class="choice-tool">
+      <h3 class="choice-tool-header">Use this tool to help determine the best plan for you</h3>
+      <form action="" class="planoptions">
+        <label for="person-count">Number of expected users</label>
+        <select name="person-count" id="person-count" class="choice-fields">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3-4">3-4</option>
+          <option value="5+">5+</option>
+        </select>
+        <div class="check-boxes">
+          <label for="usages">Expected uses:</label>
+          <div class="check">
+            <input type="checkbox" id="web-browsing" name="web-browsing" value="web-browsing">
+            <label for="web-browsing"> Web browsing and streaming</label><br>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="movie-streaming" name="movie-streaming" value="movie-streaming">
+            <label for="movie-streaming"> Movie Streaming</label><br>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="gaming" name="gaming" value="gaming">
+            <label for="gaming">Gaming</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="confrencing" name="confrencing" value="confrencing">
+            <label for="confrencing"> Video conferencing for work or tele-health</label><br>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="content-creation" name="content-creation" value="content-creation">
+            <label for="content-creation"> Content creation</label><br>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="game-streaming" name="game-streaming" value="game-streaming">
+            <label for="game-streaming"> Game streaming from stadia, etc</label>
+          </div>
+        </div>
+      </form>
+      <div class="optimal-plan 5mbps"></div>
+      <div class="optimal-plan 10mbps"></div>
+      <div class="optimal-plan 15mbps"></div>
+      <div class="optimal-plan 50mbps"></div>
+      <div class="optimal-plan 300mbps"></div>
     </div>
-    <form action="" class="planoptions">
-      <label for="person-count">Number of expected users</label>
-      <select name="person-count" id="person-count" class="choice-fields">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3-4">3-4</option>
-        <option value="5+">5+</option>
-      </select>
-      <div class="check-boxes">
-        <label for="usages">Expected uses:</label>
-        <div class="check">
-          <input type="checkbox" id="web-browsing" name="web-browsing" value="web-browsing">
-          <label for="web-browsing"> Web browsing and streaming</label><br>
-        </div>
-        <div class="check">
-          <input type="checkbox" id="movie-streaming" name="movie-streaming" value="movie-streaming">
-          <label for="movie-streaming"> Movie Streaming</label><br>
-        </div>
-        <div class="check">
-          <input type="checkbox" id="gaming" name="gaming" value="gaming">
-          <label for="gaming">Gaming</label>
-        </div>
-        <div class="check">
-          <input type="checkbox" id="confrencing" name="confrencing" value="confrencing">
-          <label for="confrencing"> Video conferencing for work or tele-health</label><br>
-        </div>
-        <div class="check">
-          <input type="checkbox" id="content-creation" name="content-creation" value="content-creation">
-          <label for="content-creation"> Content creation</label><br>
-        </div>
-        <div class="check">
-          <input type="checkbox" id="game-streaming" name="game-streaming" value="game-streaming">
-          <label for="game-streaming"> Game streaming from stadia, etc</label>
-        </div>
-      </div>
-    </form>
+    </div>
+    
   </main>
