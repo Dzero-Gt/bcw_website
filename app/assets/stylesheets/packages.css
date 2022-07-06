@@ -1,0 +1,62 @@
+#large-plans {
+  margin: 0;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.plans-header-large {
+  text-align: center;
+  color: #2059a8;
+  font-family: "calibrib";
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.plans-subheader-large {
+  text-align: center;
+  color: #2059a8;
+  font-family: "calibri";
+}
+
+.choice-header, .choice-subheader {
+  text-align: center;
+  color: #2059a8;
+}
+
+.choice-help {
+  background-color: white;
+  margin-bottom: 20px;
+  margin: 10px;
+  border-radius: 0 0 6px 6px;
+}
+
+.choice-header {
+  background-color: #2059a8;
+  color: white;
+  margin: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-radius: 6px 6px 0 0;
+  font-family: "calibri";
+}
+
+.choice-subheader {
+  color: white;
+  background-color: #2564BE;
+  margin: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-family: "calibri";
+}
+
+.choice-info {
+  padding-bottom: 24px;
+  padding-top: 4px;
+  font-family: "calibri";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.check-boxes {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,1 +1,102 @@
 <h2>packages</h2>
+
+ <main class="plan-info-large">
+    <h2 class="plans-header-large">Residential Plans</h2>
+    <h3 class="plans-subheader-large">Subheader info here</h3>
+    <div class="plans" id="large-plans">
+      <div class="plan">
+        <h3 class="plan-speed">5 MBPS</h3>
+        <h4 class="plan-price">$29 / month</h4>
+        <p class="information">5 Mbps Download</p>
+        <p class="information">1 Mbps Upload</p>
+        <p class="information"></p>
+        <div class="button-container">
+          <button class="sign-up">Contact Us</button>
+        </div>
+      </div>
+      <div class="plan">
+        <h3 class="plan-speed">10 MBPS</h3>
+        <h4 class="plan-price">$59 / month</h4>
+        <p class="information">10 Mbps Download</p>
+        <p class="information">2 Mbps Upload</p>
+        <p class="information"></p>
+        <div class="button-container">
+          <button class="sign-up">Contact Us</button>
+        </div>
+      </div>
+      <div class="plan">
+        <h3 class="plan-speed">15 MBPS</h3>
+        <h4 class="plan-price">$79 / month</h4>
+        <p class="information">15 Mbps Download</p>
+        <p class="information">3 Mbps Upload</p>
+        <p class="information"></p>
+        <div class="button-container">
+          <button class="sign-up">Contact Us</button>
+        </div>
+      </div>
+      <div class="plan">
+        <h3 class="plan-speed">50 MBPS</h3>
+        <h4 class="plan-price">Call for Pricing</h4>
+        <p class="information">50 Mbps Download</p>
+        <p class="information">30 Mbps Upload</p>
+        <p class="information">Available in most areas</p>
+        <p class="information">Call 989-341-3417</p>
+        <div class="button-container">
+          <button class="sign-up">Contact Us</button>
+        </div>
+      </div>
+      <div class="plan">
+        <h3 class="plan-speed">300 MBPS</h3>
+        <h4 class="plan-price">Call for Pricing</h4>
+        <p class="information">300 Mbps Download</p>
+        <p class="information">100 Mbps Upload</p>
+        <p class="information">Custom Package</p>
+        <p class="information">Call 989-341-3417</p>
+        <div class="button-container">
+          <button class="sign-up">Contact Us</button>
+        </div>
+      </div>
+    </div>
+    <div class="choice-help">
+      <h2 class="choice-header">Need help choosing a plan that's right for you?</h2>
+      <h3 class="choice-subheader">Here are some things you can concider</h3>
+      <% choice = contentful.entry('5J9gaZ2v8hAHrgd9S8Mf8X')%>
+      <p class="choice-info"><%= choice.fields[:content]%></p>
+    </div>
+    <form action="" class="planoptions">
+      <label for="person-count">Number of expected users</label>
+      <select name="person-count" id="person-count" class="choice-fields">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3-4">3-4</option>
+        <option value="5+">5+</option>
+      </select>
+      <div class="check-boxes">
+        <label for="usages">Expected uses:</label>
+        <div class="check">
+          <input type="checkbox" id="web-browsing" name="web-browsing" value="web-browsing">
+          <label for="web-browsing"> Web browsing and streaming</label><br>
+        </div>
+        <div class="check">
+          <input type="checkbox" id="movie-streaming" name="movie-streaming" value="movie-streaming">
+          <label for="movie-streaming"> Movie Streaming</label><br>
+        </div>
+        <div class="check">
+          <input type="checkbox" id="gaming" name="gaming" value="gaming">
+          <label for="gaming">Gaming</label>
+        </div>
+        <div class="check">
+          <input type="checkbox" id="confrencing" name="confrencing" value="confrencing">
+          <label for="confrencing"> Video conferencing for work or tele-health</label><br>
+        </div>
+        <div class="check">
+          <input type="checkbox" id="content-creation" name="content-creation" value="content-creation">
+          <label for="content-creation"> Content creation</label><br>
+        </div>
+        <div class="check">
+          <input type="checkbox" id="game-streaming" name="game-streaming" value="game-streaming">
+          <label for="game-streaming"> Game streaming from stadia, etc</label>
+        </div>
+      </div>
+    </form>
+  </main>
