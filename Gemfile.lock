@@ -189,6 +189,7 @@ GEM
     reline (0.3.1)
       io-console (~> 0.5)
     rexml (3.2.5)
+    rich_text_renderer (0.3.0)
     rubyzip (2.3.2)
     selenium-webdriver (4.2.1)
       childprocess (>= 0.5, < 5.0)
@@ -246,6 +247,7 @@ DEPENDENCIES
   pg
   puma (~> 5.0)
   rails (~> 7.0.3)
+  rich_text_renderer
   selenium-webdriver
   sprockets-rails
   stimulus-rails

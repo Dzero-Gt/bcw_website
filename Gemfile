@@ -16,6 +16,8 @@ gem "pg"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
+#Rich Text Renderer
+gem 'rich_text_renderer'
 #Contentful CMS
 gem 'contentful'
 
