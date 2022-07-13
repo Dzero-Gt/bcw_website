@@ -7,3 +7,11 @@
     <%= @renderer.render(article.faq_content).html_safe %>
   </div>
 <% end %>
+
+<% helpB = contentful.entries(content_type: 'helpArticleBusiness')%>
+<% helpB.each do |article| %>
+  <div class="article-container">
+    <h2 class="article-title"><%= article.fields[:faq_title]%></h2>
+    <%= @renderer.render(article.faq_content).html_safe %>
+  </div>
+<% end %>
