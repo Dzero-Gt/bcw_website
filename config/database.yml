@@ -4,9 +4,9 @@ development:
   database: BCW-DB
   pool: 5
   host: localhost
-  username: bcw
-  password: 123
-  port: 5433
+  username: bcwweb
+  password: '#Bargercreek1!'
+  port: 5432
 
 test:
   adapter: postgresql
