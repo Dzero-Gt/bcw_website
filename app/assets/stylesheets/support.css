@@ -19,14 +19,18 @@
 }
 
 .active > .arrow {
-  content: url("chevron-down.svg");
+  content: url("chevron-down.png");
 }
 
 
 
 .active + .support-content {
   display: block;
-  background-color: white;
+  background-color: #e7ebf7;
+  padding-left: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
 }
 
 .article-title {
@@ -35,5 +39,31 @@
   padding-left: 12px;
 }
 
+.support-section-header {
+  color: white;
+  background-color: #2059a8;
+  font-size: 28px;
+  padding: 12px;
+  margin: 0;
+  border-radius: 4px 4px 0 0;
+}
 
+.footer-bar {
+  height: 20px;
+  width: 100%;
+  background-color: #2059a8;
+  border-radius: 0 0 4px 4px;
+  margin-top: -1px;
+}
 
+.support-cards {
+  padding: 24px;
+}
+
+.section {
+  padding-top: 24px;
+}
+
+.article-container {
+  border-bottom: 2px #2059a8 solid;
+}
