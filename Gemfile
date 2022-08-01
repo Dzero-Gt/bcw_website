@@ -18,6 +18,7 @@ gem "puma", "~> 5.0"
 
 #Rich Text Renderer
 gem 'rich_text_renderer'
+
 #Contentful CMS
 gem 'contentful'
 

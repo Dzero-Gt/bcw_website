@@ -3,15 +3,40 @@
 <% help = contentful.entries(content_type: 'helpArticle')%>
 <% help.each do |article| %>
   <div class="article-container">
-    <h2 class="article-title"><%= article.fields[:faq_title]%></h2>
-    <%= @renderer.render(article.faq_content).html_safe %>
+    <div class="title-container">
+      <h2 class="article-title"><%= article.fields[:faq_title]%></h2>
+      <%= image_tag("chevron-up.svg", :alt => "", class: "closed-arrow arrow") %>
+    </div>
+    <div class="support-content"><%= @renderer.render(article.faq_content).html_safe %></div>
   </div>
 <% end %>
 
 <% helpB = contentful.entries(content_type: 'helpArticleBusiness')%>
 <% helpB.each do |article| %>
   <div class="article-container">
-    <h2 class="article-title"><%= article.fields[:faq_title]%></h2>
-    <%= @renderer.render(article.faq_content).html_safe %>
+    <div class="title-container">
+      <h2 class="article-title"><%= article.fields[:faq_title]%></h2>
+      <%= image_tag("chevron-up.svg", :alt => "", class: "closed-arrow arrow") %>
+    </div>
+    <div class="support-content"><%= @renderer.render(article.faq_content).html_safe %></div>
   </div>
 <% end %>
+
+<% localR = contentful.entries(content_type: 'localRecoursesInfo')%>
+<% localR.each do |article| %>
+  <div class="article-container">
+    <div class="title-container">
+      <h2 class="article-title"><%= article.fields[:title]%></h2>
+      <%= image_tag("chevron-up.svg", :alt => "", class: "closed-arrow arrow") %>
+    </div>
+    <div class="support-content"><%= @renderer.render(article.content).html_safe%></div>
+  </div>
+<% end %>
+
+<script>
+  document.querySelectorAll('.title-container').forEach(item => {
+    item.addEventListener('click', event => {
+      item.classList.toggle('active');
+    })
+  });
+</script>

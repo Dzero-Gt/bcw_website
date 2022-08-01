@@ -1,0 +1,39 @@
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background-color: #e7ebf7;
+}
+
+.arrow {
+  width: 2em;
+  height: auto;
+  margin-right: 20px;
+
+}
+
+.support-content{
+  display: none;
+  font-family: 'calibri';
+}
+
+.active > .arrow {
+  content: url("chevron-down.svg");
+}
+
+
+
+.active + .support-content {
+  display: block;
+  background-color: white;
+}
+
+.article-title {
+  color: #2059a8;
+  font-family: 'calibrib';
+  padding-left: 12px;
+}
+
+
+
