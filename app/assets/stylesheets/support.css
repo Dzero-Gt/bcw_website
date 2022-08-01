@@ -18,13 +18,13 @@
   font-family: 'calibri';
 }
 
-.active > .arrow {
+.active-support > .arrow {
   content: url("chevron-down.png");
 }
 
 
 
-.active + .support-content {
+.active-support + .support-content {
   display: block;
   background-color: #e7ebf7;
   padding-left: 24px;
@@ -67,3 +67,34 @@
 .article-container {
   border-bottom: 2px #2059a8 solid;
 }
+h3 {
+  font-family: 'calibri';
+  color: #2059a8;
+  text-align: center;
+  margin: 12px;
+  font-size: 22px;
+}
+h1 {
+  font-family: 'calibrib';
+  color: #2059a8;
+  font-weight: bold;
+}
+
+.support-header {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.support-description {
+  padding-top: 8px;
+}
+
+@media screen and (max-width: 850px) {
+  .active-support + .support-content {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+

@@ -1,4 +1,11 @@
-<h1 class="support-header">Support</h1>
+<% support = contentful.entry('1CBaUqVvYzf5cK1bcricjg')%>
+<header class="support-header">
+  <h1 class="title"><%= support.fields[:page_header] %></h1>
+  <h3 class="support-description"><%= @renderer.render(support.content).html_safe %></h3>
+  <h3 class="phone">Phone: <%= support.fields[:phone_number] %></h3>
+  <h3 class="email">Email: <%= support.fields[:email] %></h3>
+
+</header>
 
 <div class="support-cards">
   <div class="residential-help section">
@@ -49,7 +56,7 @@
   <script>
     document.querySelectorAll('.title-container').forEach(item => {
       item.addEventListener('click', event => {
-        item.classList.toggle('active');
+        item.classList.toggle('active-support');
       })
     });
   </script>
