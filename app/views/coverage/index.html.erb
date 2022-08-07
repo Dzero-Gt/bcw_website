@@ -1,1 +1,11 @@
 <h1>Coverage</h1>
+<h2 class="heat-map-header">Current map of coverage</h2>
+
+<h2 class="expansion-plans-header">Plans For Expansion</h2>
+<div class="expanson-plans-container">
+    <% expansion = contentful.entries(content_type: 'coverageExpansionPlansAndImagesvideo' %>
+    <% expansion.each do |info| %>
+        <p class="expansion-body"><%= info.fields[:text_information]%></p>
+        <p class="media-description"><%= info.fields[:short_description_of_included_media]%></p>
+    <% end %>
+</div>
