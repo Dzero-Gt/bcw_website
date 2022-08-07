@@ -3,9 +3,10 @@
 
 <h2 class="expansion-plans-header">Plans For Expansion</h2>
 <div class="expanson-plans-container">
-    <% expansion = contentful.entries(content_type: 'coverageExpansionPlansAndImagesvideo' %>
+    <% expansion = contentful.entries(content_type: 'coverageExpansionPlansAndImagesvideo') %>
     <% expansion.each do |info| %>
         <p class="expansion-body"><%= info.fields[:text_information]%></p>
+        <div class="images-video"><%= @renderer.render(info.media).html_safe %></div>
         <p class="media-description"><%= info.fields[:short_description_of_included_media]%></p>
     <% end %>
 </div>
