@@ -2,11 +2,14 @@
   <h1 class="legal-heading">Legal Information</h1>
   <h2 class="legal-subheading">Here is where you can find our Terms of Service, Service Plan information, as well as other legal information</h2>
   <div class="legal-items">
+  <% legalI = contentful.entries(content_type: 'legalInformation')%>
+  <% legalI.each do |legalItem| %>
     <div class="legal-item">
-      <h3 class="legal-item-title">Service Plan</h3>
+      <h3 class="legal-item-title"><%= legalItem.fields[:title]%></h3>
       <div class="legal-item-content">
-        <p class="legal-body">legal stuff</p>
+        <div class="legal-body"><%= @renderer.render(legalItem.legal_info).html_safe %></div>
       </div>
     </div>
+  <% end %>
   </div>
 </div>
