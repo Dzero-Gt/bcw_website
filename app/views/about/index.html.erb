@@ -1,21 +1,28 @@
 
 <main class="about-page">
-  <div class="mission-statement">
-    <h1 class="mission-statement-title">Mission Statement and Grant info</h1>
-    <p class="mission-statement-content"></p>
-  </div>
-  <div class="bio-cards">
-    <div class="bio-card">
-      <h2 class="bio-name">PERSON A</h2>
-      <%= image_tag("", :alt => "portrait", class: "Portrait") %> 
-      <p class="bio-info">dsajdjawdaidmamidwaimdimawd</p>
+<header>
+  <h1 class="about-heading">About Us</h1>
+  <% main = contentful.entries(content_type: 'aboutItem')%>
+  <% main.each do |item| %>
+    <div class="about-main">
+      <h2 class="about-main-title"><%= item.fields[:title] %></h2>
+      <div class="about-main-content"><%= @renderer.render(item.body).html_safe %></div>
     </div>
-    <div class="bio-card">
-      <h2 class="bio-name">PERSON B</h2>
-      <%= image_tag("", :alt => "portrait", class: "Portrait") %> 
-      <p class="bio-info">asdadjoajodjiadijoadijo</p>
+  <% end %>
+</header>
+
+  <% bios = contentful.entries(content_type: 'employeeBio')%>
+  
+    <div class="bio-cards">
+      <% bios.each do |bio|%>
+      <div class="bio-card">
+        <h2 class="bio-name"><%= bio.fields[:name]%></h2>
+        <div class="portrait"><%= @renderer.render(bio.portrait).html_safe %></div>
+        <p class="bio-info"><%= bio.fields[:bio]%></p>
+      </div>
+      <% end %>
     </div>
-  </div>
+  
   <div class="slides">
     <h2 class="slide-header">What We're Doing</h2>
     <div class="slidedot">
