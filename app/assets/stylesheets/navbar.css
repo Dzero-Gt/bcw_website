@@ -168,6 +168,8 @@
 
   .hamburger {
     color: white;
+    width: fit-content;
+    padding-right: 4px;
   }
 
   .drop-link{
