@@ -1,1 +1,7 @@
-<h2>acp</h2>
+<div class="acp-container">
+  <h1 class="acp-header">Affordable Connectivity Program</h1>
+  <% acp = contentful.entries(content_type: 'acpInfo')%>
+  <% acp.each do |acpmain| %>
+    <div class="acp-body"><%= @renderer.render(acpmain.content).html_safe %></div>
+  <% end %>
+</div>
