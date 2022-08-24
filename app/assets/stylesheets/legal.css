@@ -18,30 +18,9 @@
   font-size: 32px;
 }
 
-header {
-  width: 100%;
-  max-width: 1790px;
-  background-color: white;
-  border-radius: 0 0 4px 4px;
-  padding-bottom: 1em;
-}
 
-.about-main {
-  padding: 12px;
-}
 
-.about-main-title {
-  font-family: 'calibri';
-  color: #2059a8;
-  font-size: 28px;
-}
 
-.about-main-content {
-  padding-left: 12px;
-  color: #2059a8;
-  font-size: 16px;
-  font-weight: 500;
-}
 
 .legal-subheading{
   text-align: center;

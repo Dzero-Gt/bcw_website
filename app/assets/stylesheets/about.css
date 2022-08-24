@@ -2,6 +2,8 @@
  display: flex;
  flex-direction: row;
  flex-wrap: wrap;
+ margin-top: 30px;
+ margin-bottom: 30px;
 }
 
 .about-page {
@@ -47,6 +49,35 @@
   font-size: 32px;
 }
 
+.about-main {
+  padding: 12px;
+  background-color: white;
+  border-radius: 0 0 4px 4px;
+}
+
+header {
+  width: 100%;
+  max-width: 1790px;
+
+  padding-bottom: 1em;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.about-main-title {
+  font-family: 'calibri';
+  color: #2059a8;
+  font-size: 28px;
+  text-align: center;
+
+}
+
+.about-main-content {
+  padding-left: 12px;
+  color: #2059a8;
+  font-size: 16px;
+  font-weight: 500;
+}
 
 /* Slideshow container */
 .slideshow-container {
