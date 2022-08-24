@@ -67,9 +67,7 @@
     </div>
     <div class="choice-help">
       <h2 class="choice-header">Need help choosing a plan that's right for you?</h2>
-      <h3 class="choice-subheader">Here are some things you can concider</h3>
-      <% choice = contentful.entry('5J9gaZ2v8hAHrgd9S8Mf8X')%>
-      <p class="choice-info"><%= choice.fields[:content]%></p>
+      <h3 class="choice-subheader">Here are some things you can consider</h3>
       <div class="choice-tool">
       <h3 class="choice-tool-header">Use this tool to help determine the best plan for you</h3>
       <form action="" class="planoptions">
@@ -107,13 +105,21 @@
             <label for="game-streaming"> Game streaming from stadia, etc</label>
           </div>
         </div>
+        <div class="buttons">
+          <button type="reset">Clear</button>
+          <button type="calc">calculate</button>
+        </div>
       </form>
-      <div class="optimal-plan 5mbps"></div>
-      <div class="optimal-plan 10mbps"></div>
-      <div class="optimal-plan 15mbps"></div>
-      <div class="optimal-plan 50mbps"></div>
-      <div class="optimal-plan 300mbps"></div>
+      <div class="optimal-plan 5mbps">5</div>
+      <div class="optimal-plan 10mbps">10</div>
+      <div class="optimal-plan 15mbps">15</div>
+      <div class="optimal-plan 50mbps">50</div>
+      <div class="optimal-plan 300mbps">300</div>
     </div>
     </div>
     
   </main>
+
+  <script>
+    
+  </script>
