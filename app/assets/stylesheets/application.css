@@ -18,7 +18,7 @@
 :root {
   display: flex;
   justify-content: center;
-  background-color: lightgrey;
+  background-color: rgb(211, 211, 211);
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;

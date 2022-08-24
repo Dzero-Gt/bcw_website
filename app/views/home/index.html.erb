@@ -76,7 +76,7 @@
     </div>
     <br>
     <!-- The dots/circles -->
-    <div style="text-align:center">
+    <div class="dots-group" style="text-align:center">
       <span class="dot" onclick="currentSlide(1)"></span>
       <span class="dot" onclick="currentSlide(2)"></span>
       <span class="dot" onclick="currentSlide(3)"></span>
@@ -85,57 +85,64 @@
     <main class="plan-info">
       <h2 class="plans-header">No Data Cap or Throttling</h2>
       <div class="plans">
-        <div class="plan">
-          <h3 class="plan-speed">5 MBPS</h3>
-          <h4 class="plan-price">$29 / month</h4>
-          <p class="information">5 Mbps Download</p>
-          <p class="information">1 Mbps Upload</p>
-          <p class="information"></p>
-          <div class="button-container">
-            <button class="sign-up">Contact Us</button>
-          </div>
+        <% speed5 = contentful.entry('FEMM0xfUeFMjhb04Z6RPr')%>
+      <div class="plan">
+        <h3 class="plan-speed"><%= speed5.fields[:speed] %></h3>
+        <h4 class="plan-price"><%= speed5.fields[:price] %></h4>
+        <p class="information"><%= speed5.fields[:info_line1] %></p>
+        <p class="information"><%= speed5.fields[:info_line2] %></p>
+        <p class="information"><%= speed5.fields[:info_line3] %></p>
+        <p class="information"><%= speed5.fields[:info_line4] %></p>
+        <div class="button-container">
+          <button class="sign-up">Contact Us</button>
         </div>
-        <div class="plan">
-          <h3 class="plan-speed">10 MBPS</h3>
-          <h4 class="plan-price">$59 / month</h4>
-          <p class="information">10 Mbps Download</p>
-          <p class="information">2 Mbps Upload</p>
-          <p class="information"></p>
-          <div class="button-container">
-            <button class="sign-up">Contact Us</button>
-          </div>
+      </div>
+      <% speed10 = contentful.entry('6SGWaaNY6kA7uB2aE7hmKE')%>
+      <div class="plan">
+        <h3 class="plan-speed"><%= speed10.fields[:speed] %></h3>
+        <h4 class="plan-price"><%= speed10.fields[:price] %></h4>
+        <p class="information"><%= speed10.fields[:info_line1] %></p>
+        <p class="information"><%= speed10.fields[:info_line2] %></p>
+        <p class="information"><%= speed10.fields[:info_line3] %></p>
+        <p class="information"><%= speed10.fields[:info_line4] %></p>
+        <div class="button-container">
+          <button class="sign-up">Contact Us</button>
         </div>
-        <div class="plan">
-          <h3 class="plan-speed">15 MBPS</h3>
-          <h4 class="plan-price">$79 / month</h4>
-          <p class="information">15 Mbps Download</p>
-          <p class="information">3 Mbps Upload</p>
-          <p class="information"></p>
-          <div class="button-container">
-            <button class="sign-up">Contact Us</button>
-          </div>
+      </div>
+      <% speed15 = contentful.entry('1uHRSVRPQKHPxhO0xelKJv')%>
+      <div class="plan">
+        <h3 class="plan-speed"><%= speed15.fields[:speed] %></h3>
+        <h4 class="plan-price"><%= speed15.fields[:price] %></h4>
+        <p class="information"><%= speed15.fields[:info_line1] %></p>
+        <p class="information"><%= speed15.fields[:info_line2] %></p>
+        <p class="information"><%= speed15.fields[:info_line3] %></p>
+        <p class="information"><%= speed15.fields[:info_line4] %></p>
+        <div class="button-container">
+          <button class="sign-up">Contact Us</button>
         </div>
-        <div class="plan">
-          <h3 class="plan-speed">50 MBPS</h3>
-          <h4 class="plan-price">Call for Pricing</h4>
-          <p class="information">50 Mbps Download</p>
-          <p class="information">30 Mbps Upload</p>
-          <p class="information">Available in most areas</p>
-          <p class="information">Call 989-341-3417</p>
-          <div class="button-container">
-            <button class="sign-up">Contact Us</button>
-          </div>
+      </div>
+      <% speed50 = contentful.entry('4Uiq1UXa3S4XkgKy4FEJSE')%>
+      <div class="plan">
+        <h3 class="plan-speed"><%= speed50.fields[:speed] %></h3>
+        <h4 class="plan-price"><%= speed50.fields[:price] %></h4>
+        <p class="information"><%= speed50.fields[:info_line1] %></p>
+        <p class="information"><%= speed50.fields[:info_line2] %></p>
+        <p class="information"><%= speed50.fields[:info_line3] %></p>
+        <p class="information"><%= speed50.fields[:info_line4] %></p>
+        <div class="button-container">
+          <button class="sign-up">Contact Us</button>
         </div>
-        <div class="plan">
-          <h3 class="plan-speed">300 MBPS</h3>
-          <h4 class="plan-price">Call for Pricing</h4>
-          <p class="information">300 Mbps Download</p>
-          <p class="information">100 Mbps Upload</p>
-          <p class="information">Custom Package</p>
-          <p class="information">Call 989-341-3417</p>
-          <div class="button-container">
-            <button class="sign-up">Contact Us</button>
-          </div>
+      </div>
+      <% speed300 = contentful.entry('5mbDOoVlq3Mh2Yk9XbY5KG')%>
+      <div class="plan">
+        <h3 class="plan-speed"><%= speed300.fields[:speed] %></h3>
+        <h4 class="plan-price"><%= speed300.fields[:price] %></h4>
+        <p class="information"><%= speed300.fields[:info_line1] %></p>
+        <p class="information"><%= speed300.fields[:info_line2] %></p>
+        <p class="information"><%= speed300.fields[:info_line3] %></p>
+        <p class="information"><%= speed300.fields[:info_line4] %></p>
+        <div class="button-container">
+          <button class="sign-up">Contact Us</button>
         </div>
       </div>
   </main>
