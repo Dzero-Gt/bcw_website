@@ -70,13 +70,13 @@
       <h3 class="choice-subheader">Here are some things you can consider</h3>
       <div class="choice-tool">
       <h3 class="choice-tool-header">Use this tool to help determine the best plan for you</h3>
-      <form action="" class="planoptions">
+      <form onsubmit="return false" action="" class="planoptions">
         <label for="person-count">Number of expected users</label>
         <select name="person-count" id="person-count" class="choice-fields">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3-4">3-4</option>
-          <option value="5+">5+</option>
+          <option value=1>1</option>
+          <option value=2>2</option>
+          <option value=3>3-4</option>
+          <option value=5>5+</option>
         </select>
         <div class="check-boxes">
           <label for="usages">Expected uses:</label>
@@ -128,6 +128,7 @@
   <script>
     document.getElementById("calc").addEventListener("click", plan);
     var speed = 1;
+    var multi = 1;
     var web = document.getElementById('web-browsing');
     var email = document.getElementById('email');
     var movie = document.getElementById('movie-streaming');
@@ -135,9 +136,11 @@
     var conferencing = document.getElementById('confrencing');
     var gamest = document.getElementById('game-streaming');
     var content = document.getElementById('content-creation');
+    var people = document.getElementById('person-count')
     
 
     function plan() {
+
       if (content.checked) {
         speed = 300;
       }
@@ -156,8 +159,10 @@
       else if (web.checked) {
         speed = 10;
       }
-      else (email.checked) {
+      else if (email.checked) {
         speed = 5;
       }
+      multi = people.value;
+      speed = speed * multi;
     }
   </script>
