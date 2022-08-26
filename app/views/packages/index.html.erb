@@ -81,6 +81,10 @@
         <div class="check-boxes">
           <label for="usages">Expected uses:</label>
           <div class="check">
+            <input type="checkbox" id="email" name="email" value="email">
+            <label for="email"> Emails and basic web browsing</label>
+          </div>
+          <div class="check">
             <input type="checkbox" id="web-browsing" name="web-browsing" value="web-browsing">
             <label for="web-browsing"> Web browsing and streaming</label><br>
           </div>
@@ -104,10 +108,11 @@
             <input type="checkbox" id="game-streaming" name="game-streaming" value="game-streaming">
             <label for="game-streaming"> Game streaming from stadia, etc</label>
           </div>
+          
         </div>
         <div class="buttons">
           <button type="reset">Clear</button>
-          <button type="calc">calculate</button>
+          <button id="calc" type="calc">calculate</button>
         </div>
       </form>
       <div class="optimal-plan 5mbps">5</div>
@@ -121,5 +126,38 @@
   </main>
 
   <script>
+    document.getElementById("calc").addEventListener("click", plan);
+    var speed = 1;
+    var web = document.getElementById('web-browsing');
+    var email = document.getElementById('email');
+    var movie = document.getElementById('movie-streaming');
+    var gaming = document.getElementById('gaming');
+    var conferencing = document.getElementById('confrencing');
+    var gamest = document.getElementById('game-streaming');
+    var content = document.getElementById('content-creation');
     
+
+    function plan() {
+      if (content.checked) {
+        speed = 300;
+      }
+      else if (gamest.checked) {
+        speed = 50;
+      }
+      else if (conferencing.checked) {
+        speed = 30;
+      }
+      else if (gaming.checked) {
+        speed = 30;
+      }
+      else if (movie.checked) {
+        speed = 15;
+      }
+      else if (web.checked) {
+        speed = 10;
+      }
+      else (email.checked) {
+        speed = 5;
+      }
+    }
   </script>
