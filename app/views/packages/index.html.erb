@@ -70,6 +70,7 @@
       <h3 class="choice-subheader">Here are some things you can consider</h3>
       <div class="choice-tool">
       <h3 class="choice-tool-header">Use this tool to help determine the best plan for you</h3>
+    <div class="tool">
       <form onsubmit="return false" action="" class="planoptions">
         <label for="person-count">Number of expected users</label>
         <select name="person-count" id="person-count" class="choice-fields">
@@ -108,21 +109,21 @@
             <input type="checkbox" id="game-streaming" name="game-streaming" value="game-streaming">
             <label for="game-streaming"> Game streaming from stadia, etc</label>
           </div>
-          
         </div>
         <div class="buttons">
           <button type="reset">Clear</button>
           <button id="calc" type="calc">calculate</button>
         </div>
       </form>
-      <div class="optimal-plan 5mbps">5</div>
-      <div class="optimal-plan 10mbps">10</div>
-      <div class="optimal-plan 15mbps">15</div>
-      <div class="optimal-plan 50mbps">50</div>
-      <div class="optimal-plan 300mbps">300</div>
+      <div class="results">
+        <div id="5mbps" class="optimal-plan hidden">5</div>
+        <div id="10mbps" class="optimal-plan hidden">10</div>
+        <div id="15mbps" class="optimal-plan hidden">15</div>
+        <div id="50mbps" class="optimal-plan hidden">50</div>
+        <div id="300mbps" class="optimal-plan hidden">300</div>
+      </div>
+      
     </div>
-    </div>
-    
   </main>
 
   <script>
@@ -136,11 +137,20 @@
     var conferencing = document.getElementById('confrencing');
     var gamest = document.getElementById('game-streaming');
     var content = document.getElementById('content-creation');
-    var people = document.getElementById('person-count')
+    var people = document.getElementById('person-count');
+    var mbps5 = document.getElementById('5mbps')
+    var mbps10 = document.getElementById('10mbps')
+    var mbps15 = document.getElementById('15mbps')
+    var mbps50 = document.getElementById('50mbps')
+    var mbps300 = document.getElementById('300mbps')
     
 
     function plan() {
-
+      mbps5.classList.add('hidden');
+      mbps10.classList.add('hidden');
+      mbps15.classList.add('hidden');
+      mbps50.classList.add('hidden');
+      mbps300.classList.add('hidden');
       if (content.checked) {
         speed = 300;
       }
@@ -164,5 +174,20 @@
       }
       multi = people.value;
       speed = speed * multi;
+      if (speed < 10) {
+        mbps5.classList.toggle('hidden');
+      }
+      else if (speed < 15) {
+        mbps10.classList.toggle('hidden');
+      }
+      else if (speed < 50) {
+        mbps15.classList.toggle('hidden');
+      }
+      else if (speed < 300) {
+        mbps50.classList.toggle('hidden');
+      }
+      else {
+        mbps300.classList.toggle('hidden');
+      }
     }
   </script>
