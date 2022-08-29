@@ -43,8 +43,10 @@
   color: white;
   background-color: #2564BE;
   margin: 0;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
   font-family: "calibri";
 }
 
@@ -100,4 +102,31 @@ button {
 .tool {
   display: flex;
   justify-content: space-between;
+  gap: 50px;
+}
+
+.optimal-plan {
+  color: #2059a8;
+  font-family: 'calibri';
+  font-size: 18px;
+  font-weight: bold;
+}
+.results {
+  display: flex;
+  align-items: center;
+}
+@media screen and (min-width: 850px) {
+  .optimal-plan {
+    padding-right: 200px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .tool {
+    flex-direction: column;
+  }
+
+  .optimal-plan {
+    padding-bottom: 50px;
+  }
 }
