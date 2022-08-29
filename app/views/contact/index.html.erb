@@ -1,1 +1,17 @@
-<h1>contact us</h1>
+<div class="contact-container">
+  <h1 class="contact-header">Contact Us</h1>
+  <% contact = contentful.entry('dx2vqlMNP7lGD7Yf7gq7r')%>
+  <h2 class="subheader"><%= contact.fields[:subheader] %></h2>
+  <div class="contact-info">
+    <div class="contact-group">
+      <h2 class="info-heading">Email</h2>
+        <h3 class="info"><%= contact.fields[:email]%></h3>
+    </div>
+    <div class="contact-group">
+      <h2 class="info-heading">Phone</h2>
+        <h3 class="info"><%= contact.fields[:phone]%></h3>
+    </div>
+  </div>
+  <p class="additional-info"><%=@renderer.render(contact.additional_info).html_safe %></p>
+  <div class="bottomspace"></div>
+</div>
