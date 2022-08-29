@@ -94,7 +94,7 @@
         <p class="information"><%= speed5.fields[:info_line3] %></p>
         <p class="information"><%= speed5.fields[:info_line4] %></p>
         <div class="button-container">
-          <button class="sign-up">Contact Us</button>
+          <%= button_to "Contact Us", contact_path, method: :get , class: "sign-up"%>
         </div>
       </div>
       <% speed10 = contentful.entry('6SGWaaNY6kA7uB2aE7hmKE')%>
@@ -106,7 +106,7 @@
         <p class="information"><%= speed10.fields[:info_line3] %></p>
         <p class="information"><%= speed10.fields[:info_line4] %></p>
         <div class="button-container">
-          <button class="sign-up">Contact Us</button>
+          <%= button_to "Contact Us", contact_path, method: :get , class: "sign-up"%>
         </div>
       </div>
       <% speed15 = contentful.entry('1uHRSVRPQKHPxhO0xelKJv')%>
@@ -118,7 +118,7 @@
         <p class="information"><%= speed15.fields[:info_line3] %></p>
         <p class="information"><%= speed15.fields[:info_line4] %></p>
         <div class="button-container">
-          <button class="sign-up">Contact Us</button>
+          <%= button_to "Contact Us", contact_path, method: :get , class: "sign-up"%>
         </div>
       </div>
       <% speed50 = contentful.entry('4Uiq1UXa3S4XkgKy4FEJSE')%>
@@ -130,7 +130,7 @@
         <p class="information"><%= speed50.fields[:info_line3] %></p>
         <p class="information"><%= speed50.fields[:info_line4] %></p>
         <div class="button-container">
-          <button class="sign-up">Contact Us</button>
+          <%= button_to "Contact Us", contact_path, method: :get , class: "sign-up"%>
         </div>
       </div>
       <% speed300 = contentful.entry('5mbDOoVlq3Mh2Yk9XbY5KG')%>
@@ -142,7 +142,7 @@
         <p class="information"><%= speed300.fields[:info_line3] %></p>
         <p class="information"><%= speed300.fields[:info_line4] %></p>
         <div class="button-container">
-          <button class="sign-up">Contact Us</button>
+          <%= button_to "Contact Us", contact_path, method: :get , class: "sign-up"%>
         </div>
       </div>
   </main>

@@ -22,8 +22,8 @@ Rails.application.routes.draw do
   #main about page
   get "aboutmain", to: "aboutmain#index"
 
-  #social media page
-  get "social", to: "social#index"
+  #contact us page page
+  get "contact", to: "contact#index"
 
   #legal information page
   get "legal", to: "legal#index"
